@@ -67,8 +67,10 @@ tienda/
 ├── domain/           # Lógica pura e Interfaces
 │   ├── logic.py      # SRP: Cálculo de IVA
 │   └── interfaces.py # DIP: Contrato de Pago
+│   └── builders.py   # Builder PAttern para objeto complejo Orden
 ├── infra/            # Detalles técnicos
 │   └── gateways.py   # Implementación de Banco (Log local)
+│   └── factories.py  # Factory Method para generación de procesadores
 ├── services.py       # Capa de Servicio (Orquestación)
 ├── views.py          # Class-Based Views
 └── models.py         # Modelos de Django
